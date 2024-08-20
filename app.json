@@ -2,6 +2,7 @@
   "expo": {
     "name": "react-native-expo24",
     "slug": "react-native-expo24",
+    "scheme": "react-native-expo24",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -22,6 +23,9 @@
     },
     "web": {
       "favicon": "./src/assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
