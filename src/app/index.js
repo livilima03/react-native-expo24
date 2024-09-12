@@ -17,4 +17,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  tittle: {
+    fontFamily: "bold",
+    fontSize: 20,
+  },
 });

@@ -1,15 +1,5 @@
-import { createContext } from "react";
+import { FontProvider } from "./Font";
 
-const FontContext = createContext({})
-
-export function FontProvider({children}){
-    return <FontContext.Provider value={{}}></FontContext.Provider>;
-}
-
-export function useFont() {
-    const context = useContext(FontContext)
-    if (!context) {
-        throw new Error("useFont  must be used within a FontProvider")
-    }
-    return context;
+export function AppProvider({children}) {
+   return <FontProvider>{children}</FontProvider>;
 }
